@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="Movies.css">
+</head>
+<body>
+  <header>
+    <div class="header-title">🎬 Movie Search</div>
+  <button id="logoutBtn">Logout</button>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="movieInput" placeholder="Search for a Movie...">
+    <button onclick="searchMovies()">Search</button>
+  </div>
+
+  <div id="moviesContainer" class="movies-container"></div>
+
+  <script src="Movies.js"></script>
+</body>
+</html>

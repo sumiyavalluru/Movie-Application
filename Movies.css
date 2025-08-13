@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 20px;
+  background: #1e293b;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  height: 25px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.search-container button:hover {
+  background: #0ea5e9;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background: #1e293b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  object-fit: contain;
+  background: #0f172a;
+}
+
+.movie-details {
+  padding: 15px;
+}
+
+.movie-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+.movie-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.no-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; 
+  color: #ff4d4d;
+  width: 100%;
+  padding-left: 550px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px 20px;
+  background: #1e293b; 
+  color: white;
+  position: relative;
+}
+
+.header-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#logoutBtn {
+  position: absolute;
+  right: 20px; 
+  height: 40px;
+  width: 130px;
+  background: linear-gradient(135deg, #ff4e5197, #f9d423);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#logoutBtn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}

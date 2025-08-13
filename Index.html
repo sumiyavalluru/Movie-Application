@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Login & Signup</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form onsubmit="signup(event)">
+          <h1>Create Account</h1>
+          <span>Register with Email</span>
+          <input type="text" id="signupUsername" placeholder="Name" required />
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Enter E-mail"
+            required
+          />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Enter Password"
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in">
+        <form onsubmit="login(event)">
+          <h1>Sign In</h1>
+          <span>Login With Email & Password</span>
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter E-mail"
+            required
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+            required
+          />
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Sign in with your details</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friends!</h1>
+            <p>Enter your details to create an account</p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
